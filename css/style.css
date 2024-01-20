@@ -1,0 +1,170 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #272b30;
+    font-family: "Comfortaa", cursive;
+}
+::-webkit-scrollbar{
+    width: 0.625rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #272b30;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+}
+::-webkit-scrollbar-track {
+    background-color: #32383e;
+}
+
+header img{
+    height: 35vh !important;
+}
+.navbar img{
+    width: 50px;
+}
+.navbar{
+  margin-top: -3%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #3A497B !important;
+    color: #fff !important;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+    width: 90%;
+}
+.navbar h4{
+    font-weight: 500;
+ font-size: 20px;
+ margin-top: 5px;
+}
+.nav-item a{
+    color: #fff !important;
+    font-size: 14px;
+}
+.nav-item a:hover{
+    color: #09c !important;
+}
+.nav-item .active{
+   color: #09c !important;
+}
+.card{
+    cursor: pointer;
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+}
+.card:hover{
+   transform: scale(1.05);
+   filter: grayscale(0);
+}
+.card-footer span{
+    padding: 1px 7px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.card p{
+  font-size: 14px;
+}
+
+.card .btnFree{
+  background-color: rgb(57, 100, 165);
+  padding: 2px 9px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.detailes span{
+font-size: 13px;
+font-weight: 600;
+}
+.detailes .item{
+font-size: 14px;
+line-height: 21px;
+}
+.detailes{
+  z-index: 5;
+}
+
+
+.loading{
+  background-color: #272B30 !important;
+}
+.loader {
+  transform: rotateZ(45deg);
+  perspective: 1000px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
+  .loader:before,
+  .loader:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    transform: rotateX(70deg);
+    animation: 1s spin linear infinite;
+  }
+  .loader:after {
+    color: #FF3D00;
+    transform: rotateY(70deg);
+    animation-delay: .4s;
+  }
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
+
+@keyframes rotateccw {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    box-shadow: .2em 0px 0 0px currentcolor;
+  }
+  12% {
+    box-shadow: .2em .2em 0 0 currentcolor;
+  }
+  25% {
+    box-shadow: 0 .2em 0 0px currentcolor;
+  }
+  37% {
+    box-shadow: -.2em .2em 0 0 currentcolor;
+  }
+  50% {
+    box-shadow: -.2em 0 0 0 currentcolor;
+  }
+  62% {
+    box-shadow: -.2em -.2em 0 0 currentcolor;
+  }
+  75% {
+    box-shadow: 0px -.2em 0 0 currentcolor;
+  }
+  87% {
+    box-shadow: .2em -.2em 0 0 currentcolor;
+  }
+}
+
+      
